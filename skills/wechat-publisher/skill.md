@@ -79,8 +79,8 @@ npx tsx publish-v2.ts
 
 ## 微信公众号配置
 
-- 公众号：硬核的侃爷
-- AppID: `wx607a26b583ffa302`
+- 公众号：****
+- AppID: `****`
 - AppSecret: 已配置
 
 ## 常见问题
