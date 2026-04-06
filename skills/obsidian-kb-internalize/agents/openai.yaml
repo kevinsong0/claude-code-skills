@@ -1,0 +1,7 @@
+interface:
+  display_name: "Obsidian KB Internalize"
+  short_description: "One-command raw-to-wiki pipeline runner"
+  default_prompt: "Use $obsidian-kb-internalize to automatically process D:\\Nutstore\\Obsidian\\raw into a wiki."
+
+policy:
+  allow_implicit_invocation: true

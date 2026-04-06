@@ -16,6 +16,13 @@ claude-code-skills/
 │       ├── skill.md
 │       └── templates/
 │           └── community-engagement.ts
+│   ├── obsidian-kb-internalize/   # Obsidian 知识库内化一键管线
+│   │   ├── SKILL.md
+│   │   ├── scripts/
+│   │   └── references/
+│   └── refine-markdown-to-qa/     # Markdown 转高质量问答
+│       ├── SKILL.md
+│       └── scripts/
 └── README.md
 ```
 
@@ -32,6 +39,31 @@ claude-code-skills/
 ```bash
 cd skills/wechat-publisher
 npx tsx publish-agi-newsprint.ts
+```
+
+### 2. Obsidian KB Internalize - 知识库内化编译管线
+
+**功能**：
+- 面向 `D:\Nutstore\Obsidian` 的增量内化流程
+- 一键串联 `ingest`、`compile`、`conceptdef`、`health`
+- 支持追问 `ask` 与汇报 `render`
+- 默认采用 LLM-first 编译策略与模型池配置
+
+**使用方式**：
+```bash
+python C:\Users\Administrator\.codex\skills\obsidian-kb-internalize\scripts\run_internalize.py --help
+```
+
+### 3. Refine Markdown to QA - Markdown 问答化
+
+**功能**：
+- 批量读取目录内 Markdown 文件并转换为问答形式
+- 逐文件调用模型增强逻辑、上下文衔接与解释深度
+- 支持处理后归档原文件
+
+**使用方式**：
+```bash
+python skills/refine-markdown-to-qa/scripts/refine_markdown_to_qa.py --help
 ```
 
 ---
